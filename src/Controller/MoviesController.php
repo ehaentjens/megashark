@@ -41,6 +41,7 @@ class MoviesController extends AppController
 
         $this->set('movie', $movie);
         $this->set('_serialize', ['movie']);
+
     }
 
     /**
@@ -108,4 +109,6 @@ class MoviesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    
+
 }

@@ -41,14 +41,16 @@
     </table>
     <table>
         <?php foreach($showtimes as $showtime): ?>
-        
+        <tr>
+                
                 <td><?= h($showtime->id) ?></td>
-                <td><?= h($showtime->movies_id) ?></td>
-                <td><?= h($showtime->room_id) ?></td>
+                
+                <td><?= h($showtime->movie->name) ?></td>
+                
                 <td><?= h($showtime->start) ?></td>
+               
                 <td><?= h($showtime->end) ?></td>
-                <td><?= h($showtime->created) ?></td>
-                <td><?= h($showtime->modified) ?></td>
+        </tr>       
          <?php endforeach; ?>
     </table>
 </div>
